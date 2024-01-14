@@ -1,4 +1,11 @@
 # GT NEI Ore Plugin
+This is a fork of [GWYOG's GTNEIOrePlugin](https://github.com/GWYOG/GTNEIOrePlugin) for use outside of GTNH and for easier accessibility (Baidu download is unusable)
+
+The original project is kept at the `official` branch. If further maintenance are done, it will be on the `main` branch
+
+The original README is below.
+
+# GT NEI Ore Plugin
 This minecraft forge mod is an addon for GregTech5/6 and NEI and is a client-side mod.
 
 It adds several NEI plugins for GT5/6 which shows the detailed information of GregTech's ore generation.  
