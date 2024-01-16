@@ -1,0 +1,67 @@
+# gui names
+gtnop.gui.nei.title.gt.vein=GT Vein Stats
+gtnop.gui.nei.title.gt.small=GT Small Ore Stats
+
+gtnop.gui.nei.tooltip.primary=Primary Layer
+gtnop.gui.nei.tooltip.secondary=Secondary Layer
+gtnop.gui.nei.tooltip.between=Sporadic In-between
+gtnop.gui.nei.tooltip.sporadic=Sporadic Around
+gtnop.gui.nei.tooltip.chance=Chance: %s%%
+
+gtnop.gui.nei.info.height=Height: %s-%s
+gtnop.gui.nei.info.size=Size: %s
+gtnop.gui.nei.info.density=Density: %s
+gtnop.gui.nei.info.amount=%s Per Chunk
+gtnop.gui.nei.info.only_biome=§4%s Biome Only§r
+gtnop.gui.nei.info.drops=May drop:
+gtnop.gui.nei.info.dim=Found in:
+
+gtnop.gui.nei.seeAll=See All
+
+# world names
+gtnop.world.overworld.name=Overworld
+gtnop.world.nether.name=Nether
+gtnop.world.end.name=The End
+gtnop.world.end_asteroid.name=End Asteroids
+gtnop.world.moon.name=Moon
+gtnop.world.mars.name=Mars
+gtnop.world.asteroid.name=Asteroids
+gtnop.world.TwilightForest.name=Twilight Forest
+
+# vein names
+# custom should end with ore.mix.custom.ID, where ID is 00-15
+# gregtech5.09
+gtnop.ore_stat.ore.mix.naquadah=Naquadah Vein
+gtnop.ore_stat.ore.mix.lignite=Lignite Vein
+gtnop.ore_stat.ore.mix.coal=Coal Vein
+gtnop.ore_stat.ore.mix.magnetite=Magnetite Vein
+gtnop.ore_stat.ore.mix.gold=Gold Vein
+gtnop.ore_stat.ore.mix.iron=Iron Vein
+gtnop.ore_stat.ore.mix.cassiterite=Cassiterite Vein
+gtnop.ore_stat.ore.mix.tetrahedrite=Tetrahedrite Vein
+gtnop.ore_stat.ore.mix.netherquartz=Neather Quartz Vein
+gtnop.ore_stat.ore.mix.sulfur=Sulfur Vein
+gtnop.ore_stat.ore.mix.copper=Copper Vein
+gtnop.ore_stat.ore.mix.bauxite=Bauxite Vein
+gtnop.ore_stat.ore.mix.salts=Salts Vein
+gtnop.ore_stat.ore.mix.redstone=Rendstone Vein
+gtnop.ore_stat.ore.mix.soapstone=Soapstone Vein
+gtnop.ore_stat.ore.mix.nickel=Nickel Vein
+gtnop.ore_stat.ore.mix.platinum=Platinum Vein
+gtnop.ore_stat.ore.mix.pitchblende=Pitchblende Vein
+gtnop.ore_stat.ore.mix.uranium=Uranium Vein
+gtnop.ore_stat.ore.mix.monazite=Monazite Vein
+gtnop.ore_stat.ore.mix.molybdenum=Molybdenum Vein
+gtnop.ore_stat.ore.mix.tungstate=Tungstate Vein
+gtnop.ore_stat.ore.mix.sapphire=Sapphire Vein
+gtnop.ore_stat.ore.mix.manganese=Manganese Vein
+gtnop.ore_stat.ore.mix.quartz=Quartz Vein
+gtnop.ore_stat.ore.mix.diamond=Diamond Vein
+gtnop.ore_stat.ore.mix.olivine=Olivine Vein
+gtnop.ore_stat.ore.mix.apatite=Apatite Vein
+gtnop.ore_stat.ore.mix.galena=Galena Vein
+gtnop.ore_stat.ore.mix.lapis=Lapis Vein
+gtnop.ore_stat.ore.mix.beryllium=Beryllium Vein
+gtnop.ore_stat.ore.mix.oilsand=Oilsand Vein
+# gregtech5.08
+gtnop.ore_stat.ore.mix.plutonium=Plutonium Vein

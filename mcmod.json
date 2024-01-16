@@ -1,0 +1,31 @@
+{
+    "modid": "gtnoppiston",
+    "java": 8,
+    "template": "forge-1.7.10",
+    "version": "1.1.0",
+    "gradleOverride": {
+        "enabled": true,
+        "version": "1.7.10-1.1.0",
+        "group": "pistonmc.gtnop",
+        "archiveBaseName": "gtnop-piston"
+    },
+    "name": "GT NEI Ore Plugin",
+    "description": "A forge mod which adds NEI plugins for GregTech5's ores.",
+    "url": "",
+    "updateUrl": "",
+    "authorList": [
+        "GWYOG", "Pistonight"
+    ],
+    "credits": "",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": [],
+    "libs": [
+        "gregtech-5.09.33-dev.jar",
+        "industrialcraft-2-2.2.823-experimental-dev.jar",
+        "https://github.com/GTNewHorizons/twilightforest/releases/download/2.5.2-pre/TwilightForest-2.5.2-pre-dev.jar",
+        "https://github.com/GTNewHorizons/CodeChickenCore/releases/download/1.2.1/CodeChickenCore-1.2.1-dev.jar",
+        "https://github.com/GTNewHorizons/CodeChickenLib/releases/download/1.2.1/CodeChickenLib-1.2.1-dev.jar",
+        "https://github.com/GTNewHorizons/NotEnoughItems/releases/download/2.5.6-GTNH-pre/NotEnoughItems-2.5.6-GTNH-pre-dev.jar"
+    ]
+}
