@@ -14,6 +14,7 @@ This version works with [Blood-Asp's fork](https://github.com/Blood-Asp/GT5-Unof
 
 ## Screenshots
 ![](./docs/demo_vein.png)
+![](./docs/demo_small.png)
 
 ## Difference between this fork and upstream
 - Rewritten basically everything
@@ -94,11 +95,10 @@ entries for custom vein names. For example, `gtnop.ore_stat.ore.mix.custom.00`.
 See the lang files for more details
 
 ## Contribution: Supporting Extra Dimensions
-Currently, the only supported extra mod is Twilight Forest.
+Currently, the only supported extra mod (outside of GC) is Twilight Forest.
 
 If you want to add support to other mods here's how:
 - See `ModMain.java`, register the dimension in the config. Also set the default icon here
 - See `assets/gtnoppiston/lang/en_US.lang`. Add the localization entry for the dimension
     - If the dimension name is "Foo Bar", the localization key is `gtnop.world.FooBar.name`
 - That's it. Test it and open a PR
-

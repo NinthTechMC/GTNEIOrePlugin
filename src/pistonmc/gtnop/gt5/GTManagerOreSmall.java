@@ -35,6 +35,7 @@ public class GTManagerOreSmall implements IOreManager<IOreSmall>{
         return Integer.compare(aSmall.getMeta(), bSmall.getMeta());
     }
     private Item itemOre;
+    private Item itemOreGC;
     private List<IOreSmall> allOres = new ArrayList<>();
     // need this for items like diamond and emeralds that are not part of the GT meta system
     private HashMap<Item, List<IOreSmall>> exceptionItems = new HashMap<>();
@@ -57,6 +58,7 @@ public class GTManagerOreSmall implements IOreManager<IOreSmall>{
     @Override
     public void init(List<IOreWorld> worlds, List<IWorldInit> extraWorlds) {
         this.itemOre = Item.getItemFromBlock(GregTech_API.sBlockOres1);
+        this.itemOreGC = Item.getItemFromBlock(GregTech_API.sBlockOresGC);
 
         int count = 0;
         int exceptionCount = 0;
@@ -89,8 +91,6 @@ public class GTManagerOreSmall implements IOreManager<IOreSmall>{
                     ores.add(ore);
                 }
             }
-
-
 
             this.allOres.add(ore);
             count++;
@@ -172,7 +172,7 @@ public class GTManagerOreSmall implements IOreManager<IOreSmall>{
             }
             IOreSmall ore = this.allOres.get(index);
             // if we are indeed looking at the ore item, just return it
-            if (stack.getItem() == this.itemOre) {
+            if (stack.getItem() == this.itemOre || stack.getItem() == this.itemOreGC) {
                 if (stack.getItemDamage() < GTMeta.SMALL_ORE_OFFSET) {
                     // is a big ore
                     return null;

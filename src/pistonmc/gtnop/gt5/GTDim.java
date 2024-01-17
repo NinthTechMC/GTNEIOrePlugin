@@ -1,6 +1,7 @@
 package pistonmc.gtnop.gt5;
 
 import java.util.HashMap;
+import cpw.mods.fml.common.registry.GameRegistry;
 import gregtech.api.GregTech_API;
 import gregtech.api.enums.Materials;
 import gregtech.api.enums.OrePrefixes;
@@ -195,10 +196,22 @@ public abstract class GTDim implements IOreWorld {
 
     public static class Moon extends GTDim {
 
+        Block icon;
+
         @Override
         public Block getIcon() {
-            // TODO GC
-            return Blocks.end_stone;
+            if (icon == null) {
+                icon = GameRegistry.findBlock("GalacticraftCore", "tile.moonBlock");
+            }
+            if (icon == null) {
+                return Blocks.air;
+            }
+            return icon;
+        }
+
+        @Override
+        public int getIconMeta() {
+            return 3; // moon dirt
         }
 
         @Override
@@ -237,10 +250,22 @@ public abstract class GTDim implements IOreWorld {
 
     public static class Mars extends GTDim {
 
+        Block icon;
+
         @Override
         public Block getIcon() {
-            // TODO GC
-            return Blocks.end_stone;
+            if (icon == null) {
+                icon = GameRegistry.findBlock("GalacticraftMars", "tile.mars");
+            }
+            if (icon == null) {
+                return Blocks.air;
+            }
+            return icon;
+        }
+
+        @Override
+        public int getIconMeta() {
+            return 9; // mars stone
         }
 
         @Override
@@ -280,10 +305,17 @@ public abstract class GTDim implements IOreWorld {
 
     public static class Asteroids extends GTDim {
 
+        Block icon;
+
         @Override
         public Block getIcon() {
-            // TODO GC
-            return Blocks.end_stone;
+            if (icon == null) {
+                icon = GameRegistry.findBlock("GalacticraftMars", "tile.asteroidsBlock");
+            }
+            if (icon == null) {
+                return Blocks.air;
+            }
+            return icon;
         }
 
         @Override

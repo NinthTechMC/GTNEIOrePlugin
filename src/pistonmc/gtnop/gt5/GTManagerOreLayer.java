@@ -13,6 +13,7 @@ import pistonmc.gtnop.api.IOreManager;
 
 public class GTManagerOreLayer implements IOreManager<IOreLayer> {
     private Item itemOre;
+    private Item itemOreGC;
     private List<IOreLayer> allOres = new ArrayList<>();
 
     @Override
@@ -23,6 +24,7 @@ public class GTManagerOreLayer implements IOreManager<IOreLayer> {
     @Override
     public void init(List<IOreWorld> worlds, List<IWorldInit> extraWorlds) {
         this.itemOre = Item.getItemFromBlock(GregTech_API.sBlockOres1);
+        this.itemOreGC = Item.getItemFromBlock(GregTech_API.sBlockOresGC);
 
         System.out.println("Found " + GT_Worldgen_GT_Ore_Layer.sList.size() + " ore layers to load");
         
@@ -37,7 +39,7 @@ public class GTManagerOreLayer implements IOreManager<IOreLayer> {
 
     @Override
     public List<IOreLayer> getOresFor(ItemStack stack) {
-        if (stack.getItem() != this.itemOre) {
+        if (stack.getItem() != this.itemOre && stack.getItem() != this.itemOreGC) {
             return null;
         }
         int damage = stack.getItemDamage();

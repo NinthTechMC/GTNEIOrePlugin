@@ -85,6 +85,11 @@ public abstract class NEIHandler<TOre extends IOre> extends TemplateRecipeHandle
     }
 
     @Override
+    public int recipiesPerPage() {
+        return 1;
+    }
+
+    @Override
     public String getRecipeName() {
         return I18n.format("gtnop.gui.nei.title." + this.id);
     }
