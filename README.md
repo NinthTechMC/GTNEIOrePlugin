@@ -1,7 +1,4 @@
 # GT NEI Ore Plugin
-
-**WIP: GC dimension icons and Chinese localization**
-
 This is a rewrite of [GWYOG's GTNEIOrePlugin](https://github.com/GWYOG/GTNEIOrePlugin).
 
 The GTNH fork is nice, but it only works within GTNH because of their tier system.
