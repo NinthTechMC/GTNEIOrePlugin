@@ -56,7 +56,7 @@ This means you can disable the default ones by deleting the lines but not the fi
 The API allows you to extend this mod's functionality.
 
 Download the `api` jar from the release to get started. You also need to load
-the `deobf` jar as a mod, but your code should only depend on the API.
+the main jar as a mod (put in `mods`), but your code should only depend on the API.
 
 The main API class is `GTNEIOreAPI`. You can get an instance of it with `getInstance()`
 after this mod's pre-init phase. 
